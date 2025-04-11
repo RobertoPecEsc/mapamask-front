@@ -1,0 +1,45 @@
+{
+  "name": "mapamask-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon --ext ts --exec ts-node app.ts",
+    "start": "node app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/CryptoSpaceCS/mapamask-back.git"
+  },
+  "author": "CryptoSpace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/CryptoSpaceCS/mapamask-back/issues"
+  },
+  "homepage": "https://gitlab.com/CryptoSpaceCS/mapamask-back#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.1",
+    "nodemailer": "^6.7.5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "@types/nodemailer": "^6.4.17",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": "14.16.1",
+    "npm": "7.14.0"
+  }
+}
