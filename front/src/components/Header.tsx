@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css'; 
+import mapamaskLogo from '../assets/img/mapamask-logo.png';
+
 
 export const Header = () => {
     return (
@@ -10,7 +12,7 @@ export const Header = () => {
                         <div className={`flex justify-between items-center p-4 ${styles.navbar}`}>
                             <Link to="/comercios" className={`flex items-center ${styles.navLink}`}>
                                 <img
-                                    src="src/assets/img/mapamask-logo.png"
+                                    src={mapamaskLogo}
                                     alt="Logo Mapamask"
                                     width="60"
                                     className={`inline-block mr-2 ${styles.logoCs}`}
