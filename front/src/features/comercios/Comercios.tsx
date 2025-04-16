@@ -34,6 +34,7 @@ export const Comercios = () => {
 
     const handleBuscar = async () => {
         const response = await fetch("http://localhost:3000/api/business");
+        if (!response.ok) throw new Error("Error al cargar negocios");
         const rawData: BusinessAPI[] = await response.json();
 
         const data: Negocio[] = rawData
@@ -123,7 +124,7 @@ export const Comercios = () => {
                         <ViewButton
                             text={`Cambiar a ${view === "list" ? "mapa" : "lista"}`}
                             onClick={toggleView}
-                            className="rounded-md font-bold" 
+                            className="rounded-md font-bold"
                         />
                     </div>
 

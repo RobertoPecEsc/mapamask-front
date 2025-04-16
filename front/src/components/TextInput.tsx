@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 
 interface TextInputProps {
     placeholder: string,
@@ -7,7 +7,7 @@ interface TextInputProps {
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void,
 }
 
-const TextInput: React.FC<TextInputProps> = ({placeholder, className}) => {
+const TextInput: React.FC<TextInputProps> = ({ placeholder, className, value, onChange }) => {
 
     const inputStyles = {
         borderWidth: '0px',
@@ -20,9 +20,12 @@ const TextInput: React.FC<TextInputProps> = ({placeholder, className}) => {
         <input
             type="text"
             placeholder={placeholder}
+            value={value}
+            onChange={onChange}
             className={className}
             style={inputStyles}
         />
+
     )
 }
 

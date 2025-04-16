@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: '30mb' }));
 
 
-app.use('/api', businessRoutes);
+app.use('/api/business', businessRoutes);
 
 
 app.listen(port, () => {
